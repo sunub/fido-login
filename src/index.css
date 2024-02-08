@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0px;
+  line-height: calc(1rem + 0.8rem);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  container: root / inline-size;
+  height: 100%;
+  min-height: 100%;
+  line-height: calc(1rem + 0.8rem);
+}
+
+#root {
+  isolation: isolate;
+}
